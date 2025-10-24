@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+  </head>
+  <body>
+<h1>About Me</h1>
+
+<p>Hi, I am a newbie coder who has delved into a bit of Python, C# and is currently learning HTML, CSS and JavaScript. The main thing that got me interested in coding was Claude Code and seeing what it could do. </p>
+<p>I spent a couple of months using Claude Code, as I wanted to see if I could build an Add-in/Extension for Excel to act as an assistant to help me
+  with typical work on excel, capable of reading at least the data and formulas of the selected cells and with that information being able to answer my questions in Excel,
+  ranging from simple formula queries to more complex instances where i would select all cells and ask it to explain how something was calculated using the given data on the sheet.
+  The latter is very helpful in cases where I have to recall a process in an excel sheet.</p>
+
+<p>The premise for this project was that I had to use Excel quite often and I had to look up formulae to get things done in more efficient methods than existed, and I was tired of having to look them up
+  and forgetting their syntax. I knew that Microsoft had a paid option called co-pilot, but I wanted to see if I could build something better and potentially with much lower cost. Plus, I had seen videos
+  on YouTube about how capable Claude Code was, so I thought familiarizing myself with it would be useful as I imagined software development would gradually integrate AI assistance.</p>
+
+<p>After researching the major AI offerings, I found that Google’s Gemini offered a free quota that would be more than adequate for a user like me, so I selected it as my AI API.
+  I initially attempted to create this assistant for LibreOffice as it ran on Ubuntu (WSL2) my development environment (Claude Code required WSL2 as it was not supported on windows) 
+  while Microsoft Office packages are not available on Linux, however LibreOffice’s documentation for extensions was not very comprehensive so it took a lot of time to get a basic UI and 
+  it was more difficult to iterate as things broke/regressed quite often. So, I switched to creating the extension from scratch for Excel.</p>
+
+  <p>Initially it could read the values in cells but not the formulas, it was one or the other. But in its present form it can read all the values and formulas in a selection with proper formatting so 
+    that it gets passed to Gemini in an understandable state and is able to answer based on that context within the capabilities of Gemini Flash. I also wanted it to be able to view the content across 
+    multiple worksheets, but that has not been implemented properly. It also has basic write capabilities and is able to write formulas and text into 1-3 cells at a time, which is too limited to be useful, however. </p>
+
+<p>The project uses React, Node.JS and Typescript. It is in a usable state although the UI is far from perfect and overall is very rough around the edges.</p>
+
+</body>
+
+</html>
